@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_container {
+    width: 98.8vw;
+    height: 65px;
+    background-color: #041E41;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.image_container img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.btn {
+    text-decoration: none;
+    /* Removes underline from the link */
+    background-color: #E15197;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9e1238;
+}
+.main_container{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.location {
+    max-width: 400px;
+   
+    /* padding: 20px; */
+    background-color:  #041E41;
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.location h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.location select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #9e1238;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+.location select:focus {
+    outline: none;
+    border-color:  #E15197;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_face{
+    width: 230px;
+    height: 210px;
+    object-fit: cover;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.btn_{
+    text-decoration: none;
+    width: 200px;
+    background-color: #E15197;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    
+    margin-bottom: 10px;
+}
+
+.btn_:hover {
+    background-color: #9e1238;
+    cursor: pointer;
+}

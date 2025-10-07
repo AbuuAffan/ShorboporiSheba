@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header_container {
+    width: 98.9vw;
+    height: 65px;
+    background-color: #041E41;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.image_container img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.btn {
+    text-decoration: none;
+    /* Removes underline from the link */
+    background-color: #E15197;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9e1238;
+}

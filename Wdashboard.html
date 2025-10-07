@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="Images/color monogram-8.png" />
+    <link rel="stylesheet" href="Wdashboard.css" />
+
+    <title>Worker Dashboard</title>
+    <style>
+      .main_container {
+        padding-left: 100px;
+        display: flex;
+        gap: 300px;
+      }
+      .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right {
+        background-image: url("path_to_your_gif.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh; /* Adjust height as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header_container">
+      <div class="left_part">
+        <div class="image_container">
+          <a href="Wdashboard.html"
+            ><img
+              src="Images/lImage.png"
+              alt="logo of Shorboporisheba"
+              class="logo"
+          /></a>
+        </div>
+      </div>
+      <div class="right_part">
+        <!-- seeworkpost.php done -->
+        <a href="phpFile/See_work_post.php" class="btn">See Work Post</a>
+        <!-- see work request  -->
+        <a href="phpFile/See_work_request.php" class="btn">See Work Request</a>
+        <a href="support.php" class="btn">Support</a>
+        <a href="phpFile/WorkerProfile.php" class="btn">Profile</a>
+        <a href="logout.php" class="btn">Log Out</a>
+      </div>
+    </div>
+    <div class="main_container">
+      <div class="left">
+        <div>
+          <h1 style="font-size: 40px; margin-top: -50px">
+            Welcome To Your Dashboard
+          </h1>
+        </div>
+      </div>
+      <div class="right">
+        <img src="imageWorker/Electrician.gif" alt="Landing Page GIF" />
+      </div>
+    </div>
+  </body>
+</html>

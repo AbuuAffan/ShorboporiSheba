@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="png" href="Images/color monogram-8.png" />
+    <link rel="stylesheet" href="SR.css" />
+    <title>Direct Request</title>
+  </head>
+  <body>
+    <div class="header_container">
+      <div class="left_part">
+        <div class="image_container">
+          <a href="Cdashboard.php"
+            ><img
+              src="Images/lImage.png"
+              alt="logo of Shorboporisheba"
+              class="logo"
+          /></a>
+        </div>
+      </div>
+      <div class="right_part">
+        <form action="profile.php" method="get">
+          <button type="submit" class="btn" name="profileButton">
+            Profile
+          </button>
+          <button type="submit" class="btn" formaction="logout.php">
+            Log Out
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="main_container">
+      <form action="serv_req.php" method="post">
+        <div class="location">
+          <h2>Select Your Location</h2>
+          <!-- IN select tag the name attribute will store the location name -->
+          <select id="locationSelect" name="location" required>
+            <option value="" disabled selected>Select a location</option>
+            <option value="Mohammodpur">Mohammodpur</option>
+            <option value="Mirpur">Mirpur</option>
+            <option value="Dhanmondi">Dhanmondi</option>
+            <option value="Jatrabari">Jatrabari</option>
+            <option value="Uttara">Uttara</option>
+            <option value="Sadarghat">Sadarghat</option>
+            <option value="Gulshan">Gulshan</option>
+            <option value="Badda">Gulshan</option>
+            <option value="Boshundhora">Boshundhora</option>
+            <option value="Banasree">Banasree</option>
+            <option value="Khilgaon">Khilgaon</option>
+            <option value="Banani">Banani</option>
+            <option value="Baridhara">Baridhara</option>
+            <option value="Nikunja">Nikunja</option>
+            <option value="Savar">Savar</option>
+            <option value="Agargaon">Agargaon</option>
+            <option value="Farmgate">Farmgate</option>
+            <option value="Mohakhali">Mohakhali</option>
+            <option value="Niketon">Niketon</option>
+            <option value="Tejgaon">Tejgaon</option>
+          </select>
+        </div>
+
+        <div class="homeAppliance">
+          <h1 style="margin-top: 5px">Home Appliance</h1>
+          <div class="cards">
+            <div class="card">
+              <img
+                src="Images/service/ac.webp"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="AC Servicing">
+                AC Servicing
+              </button>
+            </div>
+            <div class="card">
+              <img
+                src="Images/service/tv.jpeg"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="TV Servicing">
+                TV Servicing
+              </button>
+            </div>
+            <div class="card">
+              <img
+                src="Images/service/fridge.webp"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="Fridge">Fridge</button>
+            </div>
+            <div class="card">
+              <img
+                src="Images/service/induction.webp"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="Induction">
+                Induction
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plumbing -->
+        <div class="Plumbing">
+          <h1 style="margin-top: 5px">Plumbing Servicing</h1>
+          <div class="cards">
+            <div class="card">
+              <img
+                src="Images/service/plumbing.webp"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="Plumbing Service">
+                leakage
+              </button>
+            </div>
+            <div class="card">
+              <img
+                src="Images/service/plm.jpg"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="Plumbing Service">
+                Tap change
+              </button>
+            </div>
+            <div class="card">
+              <img
+                src="Images/service/sinkR.jpg"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="Plumbing Service">
+                Sink Replace
+              </button>
+            </div>
+            <div class="card">
+              <img
+                src="Images/service/last.jpg"
+                alt="image of ac servicing"
+                class="card_face"
+              />
+              <button class="btn_" name="service" value="Plumbing Service">
+                Line Clean
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- add more cards -->
+      </form>
+    </div>
+  </body>
+</html>

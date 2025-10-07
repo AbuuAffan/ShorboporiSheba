@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_container {
+    width: 100vw;
+    height: 65px;
+    background-color:  #041E41;
+    
+   
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.image_container img {
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.btn {
+    text-decoration: none;
+    /* Removes underline from the link */
+    background-color: #E15197;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9e1238;
+    cursor: pointer;
+}
+.main_container {
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    
+}
+.form_container {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form_container label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form_container input[type="text"],
+.form_container input[type="number"],
+.form_container input[type="date"],
+.form_container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form_container button {
+    padding: 12px 20px;
+    background-color:  #E15197;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form_container button:hover {
+    background-color:  #9e1238;
+}

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+.body {
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center;    /* Centers the container vertically */
+    height: 100vh;          /* Makes the body take the full viewport height */
+    margin: 0;              /* Removes default margin */
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: #041E41;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    border-radius: 10px; /* Rounds the corners */
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-password {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #ccc;
+}
+
+label {
+    font-size: 14px;
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password {
+    color: #dcdcdc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    padding: 10px;
+    background-color: #E15197;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.login-btn:hover {
+    background-color: #9e1238;
+}
+
+.signup-link {
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.signup-link a {
+    color: #E15197;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    font-size: 12px;
+    color: #aaa;
+    background-color: #2b3d56;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.terms a {
+    color: #E15197;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
