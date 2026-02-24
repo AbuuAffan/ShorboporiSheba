@@ -203,6 +203,84 @@ body {
 }
 
 /* ========================================
+   Our Services Section Styles
+   ======================================== */
+
+.services-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+/* Section Title */
+.services-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #041E41;
+  margin-bottom: 0.75rem;
+}
+
+.services-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 3rem;
+}
+
+/* Service Card */
+.service-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect - Lift and Box Shadow */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Icon */
+.service-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #E15197 0%, #c73e7a 100%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(225, 81, 151, 0.4);
+}
+
+.service-icon i {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Service Content */
+.service-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #041E41;
+  margin-bottom: 0.75rem;
+}
+
+.service-description {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ========================================
    Responsive Styles
    ======================================== */
 
