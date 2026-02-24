@@ -229,6 +229,85 @@ body {
 }
 
 /* ========================================
+   Why Choose Us Section
+   ======================================== */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+}
+
+.why-us-item {
+  padding: 1.5rem 0.5rem;
+}
+
+.why-us-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.why-us-icon {
+  font-size: 2.5rem;
+  color: #0d6efd;
+}
+
+.why-us-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.why-us-desc {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ========================================
+   How It Works Section
+   ======================================== */
+
+.how-step {
+  padding: 2rem 1rem;
+}
+
+.how-step-number {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  border-radius: 50%;
+  line-height: 1;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.35);
+}
+
+.how-step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.how-step-desc {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ========================================
    Responsive: Mobile, Tablet, Desktop
    ======================================== */
 
