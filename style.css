@@ -178,6 +178,57 @@ body {
 }
 
 /* ========================================
+   Our Services Section
+   ======================================== */
+
+.services-section {
+  background-color: #f8f9fa;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+}
+
+.service-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #0d6efd;
+}
+
+.service-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 0.75rem;
+}
+
+.service-card-description {
+  font-size: 0.95rem;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* ========================================
    Responsive: Mobile, Tablet, Desktop
    ======================================== */
 
