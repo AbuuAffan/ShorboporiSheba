@@ -4,41 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shorbopori Sheba - Your Home Services Solution</title>
-    
+
     <!-- Bootstrap 5 CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Bootstrap Icons CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Sticky Top Navbar -->
+    <!-- 1. Navigation Bar (Sticky Top) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
-        <!-- Brand Name -->
-        <a class="navbar-brand fw-bold" href="#">
-          <i class="bi bi-house-heart-fill me-2"></i>Shorbopori Sheba
-        </a>
-        
-        <!-- Hamburger Menu Toggle Button -->
-        <button 
-          class="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" 
-          aria-expanded="false" 
+        <a class="navbar-brand fw-bold" href="#">Shorbopori Sheba</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        
-        <!-- Navbar Links -->
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
@@ -52,52 +53,40 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-          
-          <!-- Login / Sign Up Button -->
-          <div class="d-lg ms-lg-3 mt-3 mt-lg-0">
+          <div class="d-flex mt-3 mt-lg-0">
             <a href="#" class="btn btn-primary btn-login-signup">
-              <i class="bi bi-person-circle me-1"></i>Login / Sign Up
+              Login / Sign Up
             </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 2. Hero Section -->
     <section class="hero-section">
-      <!-- Dark Overlay -->
       <div class="hero-overlay"></div>
-      
-      <!-- Hero Content -->
       <div class="hero-content">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 text-center">
-              <!-- Headline -->
               <h1 class="hero-title">
                 Your Comprehensive Solution for Household Challenges.
               </h1>
-              
-              <!-- Sub-headline -->
               <p class="hero-subtitle">
-                Fast, reliable, and affordable services for your everyday needs.
+                Connect directly with trusted local engineers and service
+                providers for top-notch, affordable service.
               </p>
-              
-              <!-- Search Bar -->
               <div class="search-container">
                 <form class="search-form" role="search">
-                  <div class="input-group">
-                    <span class="input-group-text">
-                      <i class="bi bi-search"></i>
-                    </span>
-                    <input 
-                      type="text" 
-                      class="form-control form-control-lg" 
-                      placeholder="What service do you need?" 
-                      aria-label="Search"
+                  <div class="input-group input-group-lg flex-nowrap">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="What service do you need?"
+                      aria-label="What service do you need?"
                     />
-                    <button class="btn btn-search btn-lg" type="submit">
-                      Search
+                    <button class="btn btn-search" type="submit">
+                      Find a Service
                     </button>
                   </div>
                 </form>
@@ -108,80 +97,77 @@
       </div>
     </section>
 
-    <!-- Our Services Section -->
+    <!-- 3. Our Services Section -->
     <section class="services-section">
-      <div class="container">
-        <!-- Section Title -->
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8 text-center">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 text-center py-5">
             <h2 class="services-title">Explore Our Services</h2>
-            <p class="services-subtitle">Professional home services tailored to your needs</p>
           </div>
         </div>
-
-        <!-- Services Cards -->
         <div class="row g-4">
-          <!-- Gas Leak Repair -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card h-100">
-              <div class="service-icon">
-                <i class="bi bi-fire"></i>
-              </div>
-              <div class="service-content">
-                <h3 class="service-title">Gas Leak Repair</h3>
-                <p class="service-description">Immediate access to local engineers for safety and convenience.</p>
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-fire service-icon"></i>
+                </div>
+                <h3 class="card-title service-card-title">Gas Leak Repair</h3>
+                <p class="card-text service-card-description">
+                  Immediate access to local engineers for quick and reliable gas leak repairs, ensuring safety.
+                </p>
               </div>
             </div>
           </div>
-
-          <!-- Babysitting Services -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card h-100">
-              <div class="service-icon">
-                <i class="bi bi-heart-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3 class="service-title">Babysitting Services</h3>
-                <p class="service-description">Trusted, background-checked babysitters for peace of mind.</p>
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-heart-fill service-icon"></i>
+                </div>
+                <h3 class="card-title service-card-title">Babysitting Services</h3>
+                <p class="card-text service-card-description">
+                  Trusted babysitters vetted through rigorous background checks for peace of mind.
+                </p>
               </div>
             </div>
           </div>
-
-          <!-- Relocation & Interior -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card h-100">
-              <div class="service-icon">
-                <i class="bi bi-box-seam-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3 class="service-title">Relocation & Interior</h3>
-                <p class="service-description">Professional moving, cleaning, and design assistance.</p>
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-box-seam-fill service-icon"></i>
+                </div>
+                <h3 class="card-title service-card-title">Relocation & Interior</h3>
+                <p class="card-text service-card-description">
+                  Professional assistance with moving, cleaning, and interior design.
+                </p>
               </div>
             </div>
           </div>
-
-          <!-- Laundry Services -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card h-100">
-              <div class="service-icon">
-                <i class="bi bi-droplet-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3 class="service-title">Laundry Services</h3>
-                <p class="service-description">Washing, drying, folding, and ironing to save you time.</p>
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-droplet-fill service-icon"></i>
+                </div>
+                <h3 class="card-title service-card-title">Laundry Services</h3>
+                <p class="card-text service-card-description">
+                  Efficient washing, drying, folding, and ironing, saving valuable time.
+                </p>
               </div>
             </div>
           </div>
-
-          <!-- Pest Control -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="service-card h-100">
-              <div class="service-icon">
-                <i class="bi bi-bug-fill"></i>
-              </div>
-              <div class="service-content">
-                <h3 class="service-title">Pest Control</h3>
-                <p class="service-description">Effective extermination for a clean and safe environment.</p>
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <div class="service-icon-wrapper">
+                  <i class="bi bi-bug-fill service-icon"></i>
+                </div>
+                <h3 class="card-title service-card-title">Pest Control</h3>
+                <p class="card-text service-card-description">
+                  Effective extermination for cockroaches, rodents, and other pests.
+                </p>
               </div>
             </div>
           </div>
@@ -189,7 +175,7 @@
       </div>
     </section>
 
-    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <!-- Bootstrap 5 JS Bundle (required for navbar collapse) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

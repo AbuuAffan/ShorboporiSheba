@@ -1,8 +1,9 @@
 /* ========================================
    Shorbopori Sheba - Custom Styles
+   HTML5 + Bootstrap 5 + Custom CSS only
    ======================================== */
 
-/* Reset and Base Styles */
+/* Reset and Base */
 * {
   margin: 0;
   padding: 0;
@@ -10,79 +11,78 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
 }
 
 /* ========================================
-   Navbar Styles
+   Navigation Bar (Sticky Top)
    ======================================== */
 
 .navbar {
   padding: 0.75rem 0;
-  background-color: rgba(4, 30, 65, 0.95) !important;
+  background-color: rgba(33, 37, 41, 0.98) !important;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #fff !important;
-  letter-spacing: 0.5px;
-}
-
-.navbar-brand i {
-  color: #E15197;
+  font-weight: 700;
 }
 
 .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.85) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   font-weight: 500;
   padding: 0.5rem 1rem !important;
-  transition: color 0.3s ease, background-color 0.3s ease;
-  border-radius: 5px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: 6px;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: #fff !important;
-  background-color: rgba(225, 81, 151, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Login / Sign Up Button */
 .btn-login-signup {
-  background: linear-gradient(135deg, #E15197 0%, #c73e7a 100%);
-  border: none;
-  padding: 0.6rem 1.5rem;
+  padding: 0.5rem 1.25rem;
   font-weight: 600;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+  border-radius: 8px;
   white-space: nowrap;
 }
 
-.btn-login-signup:hover {
-  background: linear-gradient(135deg, #c73e7a 0%, #a83266 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(225, 81, 151, 0.4);
-  color: #fff;
-}
-
-/* Navbar Toggler */
 .navbar-toggler {
-  border: none;
-  padding: 0.5rem;
+  border-color: rgba(255, 255, 255, 0.5);
+  padding: 0.4rem 0.6rem;
 }
 
 .navbar-toggler:focus {
-  box-shadow: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Collapsed menu: full-width button on small screens */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding-top: 0.5rem;
+  }
+
+  .d-flex.mt-3.mt-lg-0 {
+    width: 100%;
+  }
+
+  .btn-login-signup {
+    width: 100%;
+  }
 }
 
 /* ========================================
-   Hero Section Styles
+   Hero Section
    ======================================== */
 
 .hero-section {
@@ -91,326 +91,169 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-image: url("https://source.unsplash.com/random/1600x900/?living-room");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-/* Dark Overlay */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(4, 30, 65, 0.75) 0%,
-    rgba(4, 30, 65, 0.65) 50%,
-    rgba(4, 30, 65, 0.8) 100%
-  );
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-/* Hero Content */
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
-/* Headline */
 .hero-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 3rem);
   font-weight: 700;
   color: #fff;
   margin-bottom: 1rem;
-  line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.25;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-/* Sub-headline */
 .hero-subtitle {
-  font-size: 1.25rem;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 2rem;
-  font-weight: 400;
+  line-height: 1.5;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Search Container */
+/* Search bar – centered Bootstrap input group */
 .search-container {
-  max-width: 600px;
+  max-width: 560px;
   margin: 0 auto;
 }
 
 .search-form .input-group {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #fff;
   border-radius: 50px;
   overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
-.search-form .input-group:focus-within {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-}
-
-/* Search Icon */
-.input-group-text {
-  background-color: #fff;
-  border: none;
-  padding-left: 1.25rem;
-}
-
-.input-group-text i {
-  color: #041E41;
-  font-size: 1.1rem;
-}
-
-/* Search Input */
 .search-form .form-control {
   border: none;
-  padding: 1rem 1.25rem;
+  padding: 0.875rem 1.25rem;
   font-size: 1rem;
-  background-color: transparent;
 }
 
 .search-form .form-control:focus {
   box-shadow: none;
   border: none;
+  outline: none;
 }
 
 .search-form .form-control::placeholder {
   color: #6c757d;
 }
 
-/* Search Button */
 .btn-search {
-  background: linear-gradient(135deg, #E15197 0%, #c73e7a 100%);
+  background-color: #0d6efd;
   border: none;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
   color: #fff;
+  font-weight: 600;
+  padding: 0.875rem 1.5rem;
   border-radius: 0 50px 50px 0;
-  transition: all 0.3s ease;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
 }
 
 .btn-search:hover {
-  background: linear-gradient(135deg, #c73e7a 0%, #a83266 100%);
+  background-color: #0b5ed7;
   color: #fff;
 }
 
 /* ========================================
-   Our Services Section Styles
+   Responsive: Mobile, Tablet, Desktop
    ======================================== */
-
-.services-section {
-  padding: 5rem 0;
-  background-color: #f8f9fa;
-}
-
-/* Section Title */
-.services-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #041E41;
-  margin-bottom: 0.75rem;
-}
-
-.services-subtitle {
-  font-size: 1.1rem;
-  color: #6c757d;
-  margin-bottom: 3rem;
-}
-
-/* Service Card */
-.service-card {
-  background-color: #fff;
-  border: none;
-  border-radius: 15px;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-}
-
-/* Hover Effect - Lift and Box Shadow */
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-/* Service Icon */
-.service-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #E15197 0%, #c73e7a 100%);
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.service-card:hover .service-icon {
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(225, 81, 151, 0.4);
-}
-
-.service-icon i {
-  font-size: 2rem;
-  color: #fff;
-}
-
-/* Service Content */
-.service-title {
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: #041E41;
-  margin-bottom: 0.75rem;
-}
-
-.service-description {
-  font-size: 0.95rem;
-  color: #6c757d;
-  line-height: 1.6;
-  margin-bottom: 0;
-}
-
-/* ========================================
-   Responsive Styles
-   ======================================== */
-
-/* Large Desktop */
-@media (min-width: 1400px) {
-  .hero-title {
-    font-size: 3.5rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.4rem;
-  }
-}
-
-/* Desktop */
-@media (min-width: 992px) and (max-width: 1399px) {
-  .hero-title {
-    font-size: 2.75rem;
-  }
-}
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  .navbar-brand {
-    font-size: 1.3rem;
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section {
+    min-height: 85vh;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
-  .hero-subtitle {
-    font-size: 1.1rem;
-  }
-  
+
   .search-form .input-group {
-    border-radius: 15px;
+    border-radius: 12px;
   }
-  
+
   .btn-search {
-    border-radius: 15px;
-    margin: 0.5rem;
-    width: calc(100% - 1rem);
+    border-radius: 0 12px 12px 0;
   }
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .navbar {
     padding: 0.5rem 0;
   }
-  
+
   .navbar-brand {
     font-size: 1.2rem;
   }
-  
-  .navbar-collapse {
-    background-color: rgba(4, 30, 65, 0.98);
-    padding: 1rem;
-    border-radius: 10px;
-    margin-top: 0.5rem;
-  }
-  
-  .navbar-nav .nav-link {
-    padding: 0.75rem 1rem !important;
-  }
-  
-  .btn-login-signup {
-    width: 100%;
-    text-align: center;
-    margin-top: 0.5rem;
-  }
-  
+
   .hero-section {
+    min-height: 85vh;
     background-attachment: scroll;
-    min-height: 80vh;
   }
-  
+
   .hero-content {
-    padding: 1.5rem;
+    padding: 1.5rem 0.75rem;
   }
-  
+
   .hero-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 0.75rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
-  
-  .search-container {
-    width: 100%;
-  }
-  
+
   .search-form .input-group {
     flex-direction: column;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
   }
-  
-  .input-group-text {
-    display: none;
-  }
-  
+
   .search-form .form-control {
-    text-align: center;
-    border-radius: 15px 15px 0 0;
+    border-radius: 12px 12px 0 0;
     padding: 1rem;
+    text-align: center;
   }
-  
+
   .btn-search {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 12px 12px;
     width: 100%;
     padding: 1rem;
   }
 }
 
-/* Small Mobile */
+/* Small mobile */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
-  
+
   .hero-subtitle {
-    font-size: 0.9rem;
-  }
-  
-  .search-form .form-control {
     font-size: 0.95rem;
   }
 }
